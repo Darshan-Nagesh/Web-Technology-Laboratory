@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Feedback</title>
+    </head>
+    <body>
+        <h1>Feedback form</h1>
+        <form>
+            <label for="fname">Full Name : </label>
+            <input type="text" id="fname" name="fullname" placeholder="Your name"><br>
+            <label for="email">E-mail    : </label>
+            <input type="email" id="email" name="emailid" placeholder="Your e-mail id"><br>
+            <label for="usn">USN       : </label>
+            <input type="text" id="usn" name="USN" placeholder="Your USN"><br>
+            <label for="sem">Semester  :</label>
+            <input type="number" id="sem" name="semester" placeholder="Your semester"><br>
+            <label for="branch">Branch    : </label><br>
+                <input type="radio" name="branch" value="CS">Computer Science and Engineering<br>
+                <input type="radio" name="branch" value="IS">Information Science<br>
+                <input type="radio" name="branch" value="EC">Electronics and Communication<br>
+            <label for="feedback">Feedback  : </label><br>
+            <textarea rows="6" cols="50" name="feedback"></textarea><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
