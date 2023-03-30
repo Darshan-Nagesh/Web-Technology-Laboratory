@@ -13,13 +13,24 @@
             <label for="usn">USN       : </label>
             <input type="text" id="usn" name="USN" placeholder="Your USN"><br>
             <label for="sem">Semester  :</label>
-            <input type="number" id="sem" name="semester" placeholder="Your semester"><br>
+            <select name = "sem">
+                <option value = "1" selected>1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "3">4</option>
+                <option value = "3">5</option>
+                <option value = "3">6</option>
+                <option value = "3">7</option>
+                <option value = "3">8</option>
+             </select><br>
             <label for="branch">Branch    : </label><br>
                 <input type="radio" name="branch" value="CS">Computer Science and Engineering<br>
                 <input type="radio" name="branch" value="IS">Information Science<br>
                 <input type="radio" name="branch" value="EC">Electronics and Communication<br>
             <label for="feedback">Feedback  : </label><br>
             <textarea rows="6" cols="50" name="feedback"></textarea><br>
+            <input type="checkbox" id="ffreq" name="ffreq" value="Bike">
+            <label for="ffreq">Send me a copy of feedback</label><br>
             <input type="submit" value="Submit">
             <input type="reset" value="Reset">
         </form>
