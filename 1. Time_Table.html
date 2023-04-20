@@ -6,16 +6,18 @@
             img {
                 float: left;
                 margin-right: 2px; 
+                margin-left: 2px; 
             }
-            div {
+            .div1 {
                 float: left;
             }
             table , td, th {
-                border: solid 1px black;
+                border: 2px solid black;
                 border-collapse: collapse;
             }
-            #p1{
-                display: inline;
+            .inDiv {
+            height: 2px;
+            background-color: black;
             }
         </style>
     </head>
@@ -24,7 +26,7 @@
             <p>JSS MAHAVIDYAPEETHA<br>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</p>
             <h1>SRI JAYACHAMARAJENDRA COLLEGE OF ENGINEERING</h1>
             <img class="logo" src="sjce.png" alt="JSSSTU" width="150" height="80">
-            <div>
+            <div class = "div1">
             <ul>
                 <li>Constituent College of JSS Science and Technology University</li>
                 <li>Approved by A.I.C.T.E</li>
@@ -33,13 +35,13 @@
             </ul>
             </div>
             <span><img class="mvp" src="jss logo.png" alt="JSSSTU logo" width="125" heaight="80"></span>
-            <div>
+            <div class ="div1">
                 <h2>DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING</h2>
                 <p>TIMETABLE FOR ACADEMIC YEAR 2022-23 (EVEN SEMESTER) - UG </p>
             </div>
     </header>
-        <table align="center">
-            <tr><strong>
+        <table>
+            <tr>
                 <th>DAY</th>
                 <th>7:30 - 8:30</th>
                 <th>8:30 - 9:30</th>
@@ -52,7 +54,6 @@
                 <th>2:30 - 3:30</th>
                 <th>3:30 - 4:30</th>
                 <th>4:30 - 5:30</th>
-                </strong>
             </tr>
             <tr>
                 <td><strong>MON</strong></td>
@@ -128,7 +129,7 @@
                 <td></td>
                 <td>20CS610</td>
                 <td colspan="2">20CS630 P C1 HWL</td>
-                <td></td><td></td><td></td><td></td><td></td>
+                <td></td><td></td><td></td><td></td>
             </tr>
         </table>
         <br><br>
@@ -204,7 +205,7 @@
               </tr>
               <tr>
                 <td>20HU612</td>
-                <td>Constitution</td>
+                <td>Constitution of India and professional ethics</td>
                 <td>0</td>
                 <td></td>
               </tr>
@@ -216,8 +217,16 @@
         </table>
         </p>
         <footer>
-            <p>Dr. Srinath. S&emsp;&emsp;&emsp;&emsp;&emsp;Dr. S.B. Kivade</p>
-            <p>HOD, Dept. of CS&E&emsp;Principal, SJCE / Dean Engineering, JSS STU</p>
+            <p style="text-align:left;">
+                Dr. Srinath
+                <span style="float:right;">
+                    Dr. S.B. Kivade
+                </span>
+                <br>HOD, Dept. of CS&E
+                <span style="float:right;">
+                    Principal, SJCE / Dean Engineering, JSS STU
+                </span>
+            </p>
         </footer>
     </body>
 </html>
