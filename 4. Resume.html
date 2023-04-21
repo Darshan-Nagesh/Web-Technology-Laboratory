@@ -3,11 +3,6 @@
     <head>
         <title>Resume</title>
         <style>
-            main {
-                display: flex;
-                justify-content: space-evenly;
-                margin: 25px;
-            }
             h1 {
                 font-size: 50px;
             }
@@ -17,16 +12,61 @@
             h4 {
                 color: purple;
             }
+            img {
+                border-radius: 50%;
+            }
+            .full {
+                width: 100%;
+                margin: 20px;
+                display: grid;
+                grid-template-columns: 2fr 4fr;
+            }
+            .left {
+                position: initial;
+                padding: 20px;
+            }
+            .right {
+                position: initial;
+                padding: 20px;
+            }
         </style>
     </head>
     <body>
-        <main>
-            <section>
+        <div class = "full">
+            <div class = "left">
+                <img src="Darshan N.JPG" alt = "Profile pic" width = "50%" height = "25%">
                 <h1>Darshan N</h1>
                 <p>
                     Computer Science Student<br>I consider myself a responsible and orderly person.
                 </p>
-                <br>
+                <p>
+                    <address>Address : #34 Vivekananda Nagar<br>Mysore - 570023</address>
+                    Contact : +91 6362603202<br>
+                    <address>Mail : darshannagesh2002@gmail.com</address>
+                    Github : <a href = "https://github.com/Darshan-Nagesh">https://github.com/Darshan-Nagesh</a>
+                </p>
+                <h3>Skills</h3>
+                <ul>
+                    <li>Problem Solving Skill
+                        <ul>
+                            <li>C programming</li>
+                            <li>C++ programming</li>
+                            <li>Java programming</li>
+                            <li>Python programming</li>
+                        </ul>
+                    </li>
+                    <li>Web Development</li>
+                    <li>Soft skills</li>
+                </ul>
+                <h3>Languages</h3>
+                <ul>
+                    <li>English</li>
+                    <li>Kannada</li>
+                    <li>Hindi</li>
+                </ul>
+            </div>
+
+            <div class="right">
                 <div>
                     <h3>Education</h3>
                         <h4>JSS SCIENCE AND TECHNOLOGY UNIVERSITY</h4>
@@ -34,49 +74,16 @@
                         <h4>M.A.S.V.S GURUKULA PU COLLEGE</h4>
                         <p>Department of Pre-University Education<br>Passed year : 2020<br>Percentage - 97.5</p>
                         <h4>MAHARSHI PUBLIC SCHOOL</h4>
-                        <p>CENTRAL BOARD OF SECONDARY EDUCATION<br>Passed year : 2018<br>Percentage - 87.4</p>
-                </div><br>
+                        <p>Central Board of Secondary Education<br>Passed year : 2018<br>Percentage - 87.4</p>
+                </div>
                 <div>
                     <h3>Projects</h3>
                     <div>
                         <h4>Farm Mangement System</h4>
                         <p>Using HTML, CSS, JS, MySQL & PHP has been developed to override problems prevailing in practicing manual farm systems.</p>
                     </div>
-                </div>
-            </section>
-            <section>
-                <div>
-                    <address>
-                        <p>#34 Vivekananda Nagar<br>Mysore - 570023</p>
-                    </address>
-                    <p>+91 6362603202</p>
-                    <address>darshannagesh2002@gmail.com</address>
-                    <p>Github : <a href = "https://github.com/Darshan-Nagesh">https://github.com/Darshan-Nagesh</a></p>
-                </div><br><br>
-                <div>
-                    <h3>Skills</h3>
-                    <ul>
-                        <li>Problem Solving Skill
-                            <ul>
-                                <li>C programming</li>
-                                <li>C++ programming</li>
-                                <li>Java programming</li>
-                                <li>Python programming</li>
-                            </ul>
-                        </li>
-                        <li>Web Development</li>
-                        <li>Soft skills</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>English</li>
-                        <li>Kannada</li>
-                        <li>Hindi</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
+                </div>               
+            </div>
+        </div>
     </body>
 </html>
