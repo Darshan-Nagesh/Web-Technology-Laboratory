@@ -1,0 +1,17 @@
+.full {
+    width: 100%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 2fr 4fr;          
+ }
+ .left {
+     position: initial;
+     padding: 20px;
+     background-color: #00203f;
+     color: white;
+ }
+ .right {
+    position: initial;
+    padding: 20px;
+    background-color: #ADEFD1FF;
+ }
