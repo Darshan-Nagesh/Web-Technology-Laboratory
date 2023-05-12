@@ -6,7 +6,7 @@
         <title>JS validation</title>
     </head>
     <body>
-        <form name="myform" action="display()" onsubmit="return validateform()">
+        <form name="myform" onsubmit="return validateform()">
             <label>Name : </label>
             <input type="text" id="name" name="Full name" placeholder="Full name"><br>
             <label>Email : </label>
@@ -24,6 +24,7 @@
             <input type="text" id="favc" name="favc"><br>
             <input type="submit" value="submit"><br>
         </form>
+        
         <script>
             function validateform(){  
                 var name=document.myform.name.value;  
@@ -55,6 +56,5 @@
                 document.write("<br>Gender : "+gender);
                 document.write("<br>Favourite colour : "+favc);
             }
-        </script>
     </body>
 </html>
