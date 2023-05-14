@@ -24,10 +24,13 @@
           var t1 = parseInt(document.myform.t1.value);
           var t2 = parseInt(document.myform.t2.value);
           var t3 = parseInt(document.myform.t3.value);
-             
-          if((t1 >20 || t1<0) || (t2 >20 || t2<0) || (t3 >20 || t3<0)){
-             alert("Invalid Marks. Enter Again.")
-         return false;
+          var reg = document.myform.regno.value;
+          if( reg=="null" || reg=="") {
+              alert( "Please enter register no." );
+              return false;
+          }else if((t1>20 || t1<0) || (t2>20 || t2<0) || (t3 >20 || t3<0)){
+              alert("Invalid Marks. Enter Again.")
+              return false;
           }
           let max1 = Math.max(t1,t2,t3);
           let min = Math.min(t1,t2,t3);
