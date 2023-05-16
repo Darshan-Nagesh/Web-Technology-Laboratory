@@ -8,19 +8,19 @@
   </head>
   <body>
       <h1>Enter marks details: </h1>
-      <form name="myform" onsubmit="return evalu()">
+      <form name="myform" onsubmit="return evals()">
            <label>Register Number : </label>
          <input type="text" name="regno" id ="regno"><br>
-         <label>T1 Marks : </label>
+         <label>Test-1: </label>
          <input type="number" id="t1" name="t1"><br>       
-           <label>T2 Marks : </label>
+           <label>Test-2: </label>
          <input type="number" id="t2" name="t2"><br>
-           <label>T3 Marks : </label>
+           <label>Test-3: </label>
          <input type="number" id="t3" name="t3"><br>
          <input type="submit" value="submit">
       </form>
     <script>
-       function evalu(){
+       function evals(){
           var t1 = parseInt(document.myform.t1.value);
           var t2 = parseInt(document.myform.t2.value);
           var t3 = parseInt(document.myform.t3.value);
@@ -30,6 +30,15 @@
               return false;
           }else if((t1>20 || t1<0) || (t2>20 || t2<0) || (t3 >20 || t3<0)){
               alert("Invalid Marks. Enter Again.")
+              return false;
+          }else if(isNaN(t1)){
+              alert("Please provide Test-1 marks")
+              return false;
+          }else if(isNaN(t2)){
+              alert("Please provide Test-2 marks")
+              return false;
+          }else if(isNaN(t3)){
+              alert("Please provide Test-3 marks")
               return false;
           }
           let max1 = Math.max(t1,t2,t3);
