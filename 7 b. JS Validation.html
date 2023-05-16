@@ -34,6 +34,7 @@
                 var atposition=mail.indexOf("@");  
                 var dotposition=mail.lastIndexOf("."); 
                 var favc = document.myform.favc.value;
+                var check = /^[a-zA-Z]+$/;
                 var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
                 if(!regName.test(name)){
                     alert('Please enter a valid name.');
@@ -45,10 +46,10 @@
                     alert("Mobile no. must be 10 characters long.");  
                     return false;  
                 }else if( gender == "Choose" ) {
-                    alert( "Please provide your gender!" );
+                    alert("Please provide your gender!");
                     return false;
-                }else if( favc==null || favc=="") {
-                    alert( "Please provide your Favourite colour!" );
+                }else if(!check.test(favc)) {
+                    alert("Please enter valid colour!");
                     return false;
                 }
                 document.write("Name : "+name);
