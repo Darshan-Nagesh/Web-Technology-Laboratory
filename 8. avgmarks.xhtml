@@ -12,8 +12,12 @@
            var t2 = parseInt(document.forms["myform"]["t2"].value);
            var t3 = parseInt(document.forms["myform"]["t3"].value);
            var reg = document.forms["myform"]["regno"].value;
-           if(reg.trim() === "") {
+           var sub = document.forms["myform"]["sub"].value;
+           if(reg == "") {
                alert( "Please enter register no." );
+               return false;
+           }else if(sub == "") {
+               alert( "Please enter subject code" );
                return false;
            }else if(t1>20 || t2>20 || t3 >20){
                alert("Invalid Marks. Marks range : 0 - 20.Enter Again.")
@@ -40,8 +44,9 @@
       <h1>Enter marks details: </h1>
       <form name="myform" onsubmit="return evals()">
           <label for="regno">Register Number : </label>
-          <input type="text" name="regno" id ="regno" />
-          <br/>
+          <input type="text" name="regno" id ="regno" /><br/>
+          <label for="sub">Subject code : </label>
+          <input type="text" name="sub" id ="sub" /><br/>
           <label>Test-1: </label>
           <input type="number" id="t1" name="t1"/><br/>       
           <label>Test-2: </label>
