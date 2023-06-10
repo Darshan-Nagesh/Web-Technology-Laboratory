@@ -15,11 +15,11 @@
            var check = /^[a-zA-Z]+ [a-zA-Z]+$/;
            var atposition=mail.indexOf("@");  
            var dotposition=mail.lastIndexOf(".");
-           var passw = /^(?=.\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
+           var passw = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?])[A-Za-z\d@$!%*?]{8}$/;
            if(uid == "" || uid.length &lt; 5 || uid.length > 12) {
                alert( "Please enter user id, User id should be of 5 to 12 characters");
                return false;
-           }else if(!check.test(name) || name.length &lt; 15){
+           }else if(!check.test(name)){
                alert('Please enter a valid name. Name should not be less than 15 characters');
                return false;
            }else if(pass.length &lt; 8){  
