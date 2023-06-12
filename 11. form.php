@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
-        <label for="name">Message:</label><br>
+        <label>Message:</label><br>
         <textarea rows="6" cols="50" name="mes" required></textarea><br><br>
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
